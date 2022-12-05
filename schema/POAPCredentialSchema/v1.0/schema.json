@@ -9,15 +9,11 @@
       "description": "POAPSchema is used to define POAPs",
       "type": "object",
       "properties": {
-        "attendeeDID": {
-          "type": "string",
-          "format": "uri"
-        },
         "eventHash": {
             "type": "string"
         }
       },
-      "required": ["attendeeDID", "eventHash"],
+      "required": ["eventHash"],
       "additionalProperties": false
     }
   }
