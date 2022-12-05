@@ -1,0 +1,24 @@
+{
+    "type": "https://w3c-ccg.github.io/vc-json-schemas/schema/1.0/schema.json",
+    "modelVersion": "1.0",
+    "id": "did:web:veramo.io;id=0b6f7cb9-5709-4424-8601-69305cbc9f04;version=1.0",
+    "name": "POAPCredentialSchema",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "POAPSchema",
+      "description": "POAPSchema is used to define POAPs",
+      "type": "object",
+      "properties": {
+        "attendeeDID": {
+          "type": "string",
+          "format": "uri"
+        },
+        "eventHash": {
+            "type": "string"
+        }
+      },
+      "required": ["attendeeDID", "eventHash"],
+      "additionalProperties": false
+    }
+  }
+  
